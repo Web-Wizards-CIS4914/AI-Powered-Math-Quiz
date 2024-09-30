@@ -1,0 +1,43 @@
+[
+    {
+      "prompt": "Simplify the expression below into the form a + bi. Then, choose the intervals that a and b belong to: \\[ (−7 + 4i)(10 + 3i) \\]\n",
+      "completion": "−82 + 19i\n"
+    },
+    {
+      "prompt": "Simplify the expression below into the form a + bi. Then, choose the intervals that a and b belong to: \\[ −45 + 66i \\quad \\div \\quad −3− 8i \\]\n",
+      "completion": "−5.38− 7.64i\n"
+    },
+    {
+      "prompt": "Choose the smallest set of Real numbers that the number belongs to: \\(\\sqrt{25921} \\div 529 \\)\n",
+      "completion": "Integer\n"
+    },
+    {
+        "prompt": "Simplify the expression below and choose the interval the simplification is contained within: \\[ 9− 1 \\div 8 \\ast 2 − (4 \\ast 6) \\]\n",
+        "completion": "−15.250\n"
+    },
+    {
+        "prompt": "Choose the smallest set of Real numbers that the number below belongs to: \\(\\sqrt{50625} \\div 625\\)\n",
+        "completion": "Integer\n"
+    },
+    {
+        "prompt": "Simplify the expression below and choose the interval the simplification is contained within: \\[ 17 − 132 + 9 \\div 8 \\ast 20 \\div 15 \\]\n",
+        "completion": "−150.500\n"
+    },
+    {
+        "prompt": "Simplify the expression below into the form a + bi. Then, choose the intervals that a and b belong to: \\[ (−2− 6i)(−10 + 5i) \\]\n",
+        "completion": "50 + 50i\n"
+    },
+    {
+        "prompt": "Choose the smallest set of Complex numbers that the number below belongs to: \\( \\sqrt{0} + \\sqrt{3}i \\)\n",
+        "completion": "Pure Imaginary\n"
+    },
+    {
+        "prompt": "Simplify the expression below into the form a + bi. Then, choose the intervals that a and b belong to: \\[ −45 + 88i \\quad \\div \\quad 4− 6i \\]\n",
+        "completion": "−13.62 + 1.58i\n"
+    },
+    {
+        "prompt": "Choose the smallest set of Complex numbers that the number below belongs to: \\(\\sqrt{169} + \\sqrt{221}i \\)\n",
+        "completion": "Not a Complex Number\n"
+    }
+  ]
+  
