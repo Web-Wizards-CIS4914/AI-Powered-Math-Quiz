@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quiz Page</title>
+    <!-- Link to the CSS file in the same folder -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">Real Numbers</a></li>
+                <li><a href="#">Linear Functions</a></li>
+                <li><a href="#">Linear Inequalities</a></li>
+                <li><a href="#">Quadratic Functions</a></li>
+                <li><a href="#">Polynomial Functions</a></li>
+                <li><a href="#">Logarithms</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="question-box">
+                <h2>Q. 13</h2>
+                <p>Express 5^3 = 125 in logarithm form</p>
+                <form id="quiz-form">
+                    <label>
+                        <input type="radio" name="answer" value="A">
+                        Log<sub>5</sub>125 = 3
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer" value="B">
+                        Log<sub>5</sub>125 = 5
+                    </label><br>
+                    <label>
+                        <input type="radio" name="answer" value="C">
+                        Log<sub>125</sub>5 = 3
+                    </label><br>
+                    <button type="submit">Submit</button>
+                </form>
+                <div class="hint">
+                    <p>Hint: a^b = c => log<sub>a</sub>c = b</p>
+                </div>
+            </div>
+            <div class="chatbot">
+                <div class="chatbox">
+                    <p class="bot-message">Hello, let me know how I can assist you with this question.</p>
+                    <p class="user-message">How do logarithms work?</p>
+                    <p class="bot-message">Logs are how you find an unknown exponent. Take the equation a^x = b...</p>
+                    <p class="user-message">Can you explain it again?</p>
+                    <p class="bot-message">Logs are the inverse of exponentiation...</p>
+                </div>
+                <textarea placeholder="Type your message..."></textarea>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
