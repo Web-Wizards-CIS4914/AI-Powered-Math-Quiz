@@ -1,0 +1,212 @@
+/* General body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5ff; /* Light purple background */
+}
+
+/* Container to hold sidebar and main content */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 30%;
+  background-color: #f2f2f2; /* Light gray sidebar */
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Main content styling */
+.main-content {
+  width: 200%;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  background-color: #fff; /* White background for main content */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Question box styling */
+.question-box {
+  width: 35%;
+  background-color: #fafafa; /* Light grayish background */
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+}
+
+.question-box h2 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.question-box p {
+  font-size: 18px;
+  color: #333;
+}
+
+.question-box form {
+  margin-top: 20px;
+}
+
+.question-box form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.question-box button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green button */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px; /* Slight rounding */
+}
+
+.hint {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Chatbot container */
+.chatbot {
+  width: 30%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 0; /* No padding for clean layout */
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  justify-content: space-between; /* Align chatbox and text area */
+}
+
+/* Chat messages area */
+.chatbox {
+  flex-grow: 1;
+  border-bottom: 1px solid #ddd;
+  padding: 20px; /* Padding inside chat area */
+  margin-bottom: 10px;
+  overflow-y: auto;
+  max-height: 300px; /* Set a maximum height to mimic the screenshot */
+  background-color: #f5f5ff; /* Light purple background like in screenshot */
+}
+
+/* Bot message bubble styling */
+.bot-message {
+  background-color: #ff5c33; /* Orange for bot message */
+  padding: 10px;
+  border-radius: 15px 15px 15px 0px; /* Custom rounded corners */
+  margin-bottom: 10px;
+  color: #fff;
+  max-width: 75%; /* Keep it within a smaller width */
+  word-wrap: break-word;
+}
+
+/* User message bubble styling */
+.user-message {
+  background-color: #3399ff; /* Blue for user message */
+  padding: 10px;
+  border-radius: 15px 15px 0px 15px; /* Custom rounded corners */
+  margin-bottom: 10px;
+  color: #fff;
+  max-width: 75%; /* Limit width for text bubbles */
+  align-self: flex-end; /* Align user messages to the right */
+  word-wrap: break-word;
+}
+
+/* Text area for typing new messages */
+textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 0px 0px 10px 10px; /* Match rounded corners of chatbox */
+  resize: none;
+  height: 100px; /* Set a fixed height for the text area */
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 1px solid #ddd;
+  background-color: #fff;
+}
+
+textarea::placeholder {
+  color: #aaa;
+}
+
+/* Radio input and form labels */
+.question-box form input[type="radio"] {
+  margin-right: 10px;
+}
+
+.question-box form label {
+  display: flex;
+  align-items: center;
+}
+
+/* Style for the text input */
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Style for the submit button */
+button[type="submit"] {
+  background-color: #3399ff; /* Blue background */
+  color: white; /* White text */
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%; /* Full width to match the input field */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+  border-radius: 5px; /* Rounded corners */
+}
+
+button[type="submit"] {
+  background-color: #3399ff; /* Blue button to match screenshot */
+}
+
+.sidebar ul li a {
+  color: #000; /* Black text in the sidebar */
+}
+
+/* Optional scrollbar styling */
+.chatbox::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chatbox::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
