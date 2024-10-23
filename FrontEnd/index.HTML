@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Quiz Page</title>
-    <!-- Link to the CSS file in the same folder -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -43,17 +42,47 @@
                     <p>Hint: a^b = c => log<sub>a</sub>c = b</p>
                 </div>
             </div>
+
             <div class="chatbot">
-                <div class="chatbox">
+                <div class="chatbox" id="chatbox">
                     <p class="bot-message">Hello, let me know how I can assist you with this question.</p>
-                    <p class="user-message">How do logarithms work?</p>
-                    <p class="bot-message">Logs are how you find an unknown exponent. Take the equation a^x = b...</p>
-                    <p class="user-message">Can you explain it again?</p>
-                    <p class="bot-message">Logs are the inverse of exponentiation...</p>
                 </div>
-                <textarea placeholder="Type your message..."></textarea>
+                <textarea id="user-input" placeholder="Type your message..."></textarea>
+                <button id="send-btn">Send</button>
             </div>
         </div>
     </div>
+
+    <script>
+        document.getElementById('send-btn').addEventListener('click', async function() {
+            const userInput = document.getElementById('user-input').value;
+            if (userInput.trim() === "") return;
+
+            // Add user message to the chatbox
+            const chatbox = document.getElementById('chatbox');
+            const userMessage = document.createElement('p');
+            userMessage.className = 'user-message';
+            userMessage.innerText = userInput;
+            chatbox.appendChild(userMessage);
+
+            // Send the message to the backend (FastAPI GPT-2)
+            const response = await fetch('http://127.0.0.1:8000/chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message: userInput })
+            });
+
+            const data = await response.json();
+            const botMessage = document.createElement('p');
+            botMessage.className = 'bot-message';
+            botMessage.innerText = data.response;
+
+            // Add bot response to the chatbox
+            chatbox.appendChild(botMessage);
+
+            // Clear the input field
+            document.getElementById('user-input').value = '';
+        });
+    </script>
 </body>
 </html>

@@ -1,25 +1,33 @@
-from fastapi import FastAPI, Depends
-from gpt_tutor import GPT2Tutor
-from .database import SessionLocal, get_db
-from .models import Quiz
+from fastapi import FastAPI, Request
+from fastapi.middleware.cors import CORSMiddleware
+from transformers import GPT2LMHeadModel, GPT2Tokenizer
 
 app = FastAPI()
 
-# Load the GPT-2 tutor
-tutor = GPT2Tutor()
+# Allow requests from any origin (for testing purposes)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
-@app.get("/")
-async def root():
-    return {"message": "Welcome to the AI Tutor"}
+# Load the GPT-2 model and tokenizer from Hugging Face
+model = GPT2LMHeadModel.from_pretrained("gpt2")
+tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
 
-# GPT-2 endpoint
-@app.post("/tutor")
-async def tutor_endpoint(prompt: str):
-    response = tutor.generate_response(prompt)
+@app.post("/chat")
+async def chat_with_gpt(request: Request):
+    data = await request.json()
+    user_message = data.get("message", "")
+    
+    if not user_message:
+        return {"response": "Please ask a question!"}
+
+    # Generate response from GPT-2
+    inputs = tokenizer.encode(user_message, return_tensors="pt")
+    outputs = model.generate(inputs, max_length=100)
+    response = tokenizer.decode(outputs[0], skip_special_tokens=True)
+
     return {"response": response}
-
-# PostgreSQL endpoint to get quizzes
-@app.get("/quizzes/")
-async def get_quizzes(db: Session = Depends(get_db)):
-    quizzes = db.query(Quiz).all()
-    return quizzes
