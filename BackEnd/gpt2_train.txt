@@ -1,1 +1,0 @@
-will contain the quiz prompts and completions in the format required by GPT-2.
