@@ -1,0 +1,782 @@
+[
+    {
+        "module": "Module1",
+        "question_text": "Simplify the expression below into the form a + bi. Then, choose the\nintervals that a and b belong to.\n(6 + 4i)(-7 - 8i)",
+        "choices": [
+            {
+                "choice_text": "A. a \u2208 [\u221215,\u22126] and b \u2208 [73,82]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. a \u2208 [\u221274,\u221272] and b \u2208 [\u221223,\u221216]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. a \u2208 [\u221215,\u22126] and b \u2208 [\u221276,\u221275]",
+                "is_correct": true
+            },
+            {
+                "choice_text": "D. a \u2208 [\u221246,\u221235] and b \u2208 [\u221232,\u221230]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. a \u2208 [\u221274,\u221272] and b \u2208 [19,29]",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1",
+        "question_text": "Choose the smallest set of Real numbers that the number below be-\nlongs to.\n\u221a\n-1008\n-\n8",
+        "choices": [
+            {
+                "choice_text": "A. Rational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. Irrational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. Not a Real number",
+                "is_correct": true
+            },
+            {
+                "choice_text": "D. Integer",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. Whole",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1",
+        "question_text": "Simplify the expression below and choose the interval the simplification\nis contained within.\n12 - 92 + 1 \u00f7 20 * 15 \u00f7 2",
+        "choices": [
+            {
+                "choice_text": "A. [\u221269.18,\u221268.95]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. [92.75,93.01]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. [\u221268.66,\u221268.37]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. [93.35,94.09]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. None of the above\n2827-5025 Spring 2021\nProgress Quiz 10 Version ALL",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1",
+        "question_text": "Choose the smallest set of Complex numbers that the number below\nbelongs to.\n\u221a\n0 \u221a\n+ 7i\n12",
+        "choices": [
+            {
+                "choice_text": "A. Pure Imaginary",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. Not a Complex Number",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. Irrational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. Rational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. Nonreal Complex",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1",
+        "question_text": "Simplify the expression below into the form a + bi. Then, choose the\nintervals that a and b belong to.\n54 + 44i\n-5 - i",
+        "choices": [
+            {
+                "choice_text": "A. a \u2208 [\u221213,\u221211.5] and b \u2208 [\u2212167.5,\u2212165.5]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. a \u2208 [\u221211.5,\u22129.5] and b \u2208 [\u221245,\u221243]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. a \u2208 [\u221213,\u221211.5] and b \u2208 [\u22127,\u22126]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. a \u2208 [\u221210,\u22127.5] and b \u2208 [\u221211.5,\u22129]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. a \u2208 [\u2212315,\u2212313.5] and b \u2208 [\u22127,\u22126]",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1",
+        "question_text": "Simplify the expression below into the form a + bi. Then, choose the\nintervals that a and b belong to.\n63 - 66i\n-3 - 2i",
+        "choices": [
+            {
+                "choice_text": "A. a \u2208 [\u221225.5,\u221224.5] and b \u2208 [4,6.5]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. a \u2208 [\u221222.5,\u221220.5] and b \u2208 [32,33.5]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. a \u2208 [\u221258,\u221256] and b \u2208 [23.5,25.5]\n2827-5025 Spring 2021\nProgress Quiz 10 Version ALL",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. a \u2208 [\u22125.5,\u22123.5] and b \u2208 [323.5,324.5]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. a \u2208 [\u22125.5,\u22123.5] and b \u2208 [23.5,25.5]",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1",
+        "question_text": "Choose the smallest set of Real numbers that the number below be-\nlongs to.\n\u221a\n171396\n-\n529",
+        "choices": [
+            {
+                "choice_text": "A. Whole",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. Integer",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. Not a Real number",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. Rational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. Irrational",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1",
+        "question_text": "Choose the smallest set of Complex numbers that the number below\nbelongs to.\n4\n+ 4i2\n8",
+        "choices": [
+            {
+                "choice_text": "A. Pure Imaginary",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. Not a Complex Number",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. Rational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. Irrational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. Nonreal Complex",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1",
+        "question_text": "Simplify the expression below into the form a + bi. Then, choose the\nintervals that a and b belong to.\n(9 + 2i)(-8 - 3i)",
+        "choices": [
+            {
+                "choice_text": "A. a \u2208 [\u221266,\u221258] and b \u2208 [\u221246,\u221241]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. a \u2208 [\u221273,\u221271] and b \u2208 [\u22128,\u22124]\n2827-5025 Spring 2021\nProgress Quiz 10 Version ALL",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. a \u2208 [\u221283,\u221276] and b \u2208 [\u221214,\u221210]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. a \u2208 [\u221283,\u221276] and b \u2208 [4,16]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. a \u2208 [\u221266,\u221258] and b \u2208 [39,48]",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1",
+        "question_text": "Simplify the expression below and choose the interval the simplification\nis contained within.\n16 - 12 + 17 \u00f7 18 * 14 \u00f7 3",
+        "choices": [
+            {
+                "choice_text": "A. [15.12,17.86]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. [18.1,20.84]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. [13.85,16.67]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. [20.31,21.99]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. None of the above",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1",
+        "question_text": "Simplify the expression below into the form a + bi. Then, choose the\nintervals that a and b belong to.\n(4 + 9i)(10 + 2i)",
+        "choices": [
+            {
+                "choice_text": "A. a \u2208 [52,61] and b \u2208 [80,83]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. a \u2208 [52,61] and b \u2208 [\u221284,\u221280]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. a \u2208 [35,42] and b \u2208 [15,20]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. a \u2208 [18,24] and b \u2208 [97,100]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. a \u2208 [18,24] and b \u2208 [\u2212100,\u221294]",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1",
+        "question_text": "Choose the smallest set of Real numbers that the number below be-\nlongs to.\n\u221a\n202500\n-\n625",
+        "choices": [
+            {
+                "choice_text": "A. Not a Real number\n2827-5025 Spring 2021\nProgress Quiz 10 Version ALL",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. Integer",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. Whole",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. Irrational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. Rational",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1",
+        "question_text": "Simplify the expression below and choose the interval the simplification\nis contained within.\n12 - 152 + 18 \u00f7 4 * 11 \u00f7 16",
+        "choices": [
+            {
+                "choice_text": "A. [\u2212215.2,\u2212211.5]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. [\u2212211.2,\u2212207.9]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. [235.8,237.6]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. [237.9,242.8]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. None of the above",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1",
+        "question_text": "Choose the smallest set of Complex numbers that the number below\nbelongs to.\n\u221a\n182 \u221a\n+ -5i\n6",
+        "choices": [
+            {
+                "choice_text": "A. Rational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. Pure Imaginary",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. Irrational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. Not a Complex Number",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. Nonreal Complex",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1",
+        "question_text": "Simplify the expression below into the form a + bi. Then, choose the\nintervals that a and b belong to.\n54 + 11i\n7 + 2i\n2827-5025 Spring 2021\nProgress Quiz 10 Version ALL",
+        "choices": [
+            {
+                "choice_text": "A. a \u2208 [7.7,7.84] and b \u2208 [4.5,6.5]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. a \u2208 [6.7,6.84] and b \u2208 [3,5]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. a \u2208 [7.41,7.57] and b \u2208 [\u22121.5,1]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. a \u2208 [399.9,400.11] and b \u2208 [\u22121.5,1]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. a \u2208 [7.41,7.57] and b \u2208 [\u221231.5,\u221230.5]",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1",
+        "question_text": "Simplify the expression below into the form a + bi. Then, choose the\nintervals that a and b belong to.\n36 - 22i\n6 + 8i",
+        "choices": [
+            {
+                "choice_text": "A. a \u2208 [\u22120.5,1.5] and b \u2208 [\u22125,\u22124]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. a \u2208 [5,7] and b \u2208 [\u22123,\u22121.5]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. a \u2208 [39.5,41] and b \u2208 [\u22125,\u22124]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. a \u2208 [\u22120.5,1.5] and b \u2208 [\u2212420.5,\u2212419]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. a \u2208 [3,4.5] and b \u2208 [1,2.5]",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1",
+        "question_text": "Choose the smallest set of Real numbers that the number below be-\nlongs to.\n\u221a\n-882\n-\n7",
+        "choices": [
+            {
+                "choice_text": "A. Whole",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. Irrational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. Not a Real number",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. Rational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. Integer\n2827-5025 Spring 2021\nProgress Quiz 10 Version ALL",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1",
+        "question_text": "Choose the smallest set of Complex numbers that the number below\nbelongs to.\n\u221a\n0 \u221a\n+ 10i\n169",
+        "choices": [
+            {
+                "choice_text": "A. Rational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. Irrational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. Nonreal Complex",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. Pure Imaginary",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. Not a Complex Number",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1",
+        "question_text": "Simplify the expression below into the form a + bi. Then, choose the\nintervals that a and b belong to.\n(2 + 8i)(-4 - 5i)",
+        "choices": [
+            {
+                "choice_text": "A. a \u2208 [\u221248,\u221246] and b \u2208 [21.2,23]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. a \u2208 [27,40] and b \u2208 [\u221243.5,\u221241.7]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. a \u2208 [27,40] and b \u2208 [38.7,44.6]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. a \u2208 [\u221248,\u221246] and b \u2208 [\u221226.3,\u221220.6]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. a \u2208 [\u22129,\u22125] and b \u2208 [\u221241.7,\u221237.8]",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1",
+        "question_text": "Simplify the expression below and choose the interval the simplification\nis contained within.\n18 - 20 \u00f7 15 * 19 - (17 * 7)",
+        "choices": [
+            {
+                "choice_text": "A. [134.93,137.93]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. [\u2212106.07,\u221298.07]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. [\u2212172.33,\u2212168.33]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. [\u2212130.33,\u2212121.33]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. None of the above\n2827-5025 Spring 2021\nProgress Quiz 10 Version ALL",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1",
+        "question_text": "Simplify the expression below into the form a + bi. Then, choose the\nintervals that a and b belong to.\n(-7 - 2i)(9 + 10i)",
+        "choices": [
+            {
+                "choice_text": "A. a \u2208 [\u221286,\u221280] and b \u2208 [49,54]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. a \u2208 [\u221263,\u221262] and b \u2208 [\u221223,\u221218]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. a \u2208 [\u221286,\u221280] and b \u2208 [\u221253,\u221249]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. a \u2208 [\u221245,\u221241] and b \u2208 [86,91]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. a \u2208 [\u221245,\u221241] and b \u2208 [\u221292,\u221286]",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1",
+        "question_text": "Choose the smallest set of Real numbers that the number below be-\nlongs to.\n\u221a\n58564\n484",
+        "choices": [
+            {
+                "choice_text": "A. Rational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. Not a Real number",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. Irrational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. Whole",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. Integer",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1",
+        "question_text": "Simplify the expression below and choose the interval the simplification\nis contained within.\n16 - 17 \u00f7 9 * 19 - (15 * 18)",
+        "choices": [
+            {
+                "choice_text": "A. [280.9,288.9]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. [\u2212255.1,\u2212251.1]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. [\u2212291.89,\u2212288.89]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. [\u2212634,\u2212623]\n2827-5025 Spring 2021\nProgress Quiz 10 Version ALL",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. None of the above",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1",
+        "question_text": "Choose the smallest set of Complex numbers that the number below\nbelongs to.\n\u221a\n-910 \u221a\n+ 126\n13",
+        "choices": [
+            {
+                "choice_text": "A. Nonreal Complex",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. Pure Imaginary",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. Not a Complex Number",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. Irrational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. Rational",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1",
+        "question_text": "Simplify the expression below into the form a + bi. Then, choose the\nintervals that a and b belong to.\n-18 - 44i\n-6 - 3i",
+        "choices": [
+            {
+                "choice_text": "A. a \u2208 [4.5,7] and b \u2208 [3.5,6]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. a \u2208 [\u22121,1] and b \u2208 [6.5,9]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. a \u2208 [239.5,241] and b \u2208 [3.5,6]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. a \u2208 [4.5,7] and b \u2208 [209.5,211]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. a \u2208 [2,3.5] and b \u2208 [14,15.5]",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1",
+        "question_text": "Simplify the expression below into the form a + bi. Then, choose the\nintervals that a and b belong to.\n-27 - 88i\n2 + 5i",
+        "choices": [
+            {
+                "choice_text": "A. a \u2208 [\u2212495,\u2212493] and b \u2208 [\u22122,\u22121]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. a \u2208 [12.5,14] and b \u2208 [\u221211.5,\u221210.5]\n2827-5025 Spring 2021\nProgress Quiz 10 Version ALL",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. a \u2208 [\u221217.5,\u221216] and b \u2208 [\u221242.5,\u221240]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. a \u2208 [\u221214,\u221212.5] and b \u2208 [\u221218.5,\u221216]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. a \u2208 [\u221217.5,\u221216] and b \u2208 [\u22122,\u22121]",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1",
+        "question_text": "Choose the smallest set of Real numbers that the number below be-\nlongs to.\n\u221a\n945\n9",
+        "choices": [
+            {
+                "choice_text": "A. Rational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. Irrational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. Whole",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. Not a Real number",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. Integer",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1",
+        "question_text": "Choose the smallest set of Complex numbers that the number below\nbelongs to.\n\u221a\n-1170 \u221a\n+ 0i\n13",
+        "choices": [
+            {
+                "choice_text": "A. Pure Imaginary",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. Irrational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. Rational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. Not a Complex Number",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. Nonreal Complex",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1",
+        "question_text": "Simplify the expression below into the form a + bi. Then, choose the\nintervals that a and b belong to.\n(-4 + 10i)(5 - 9i)",
+        "choices": [
+            {
+                "choice_text": "A. a \u2208 [\u221220,\u221219] and b \u2208 [\u221293,\u221288]\n2827-5025 Spring 2021\nProgress Quiz 10 Version ALL",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. a \u2208 [65,72] and b \u2208 [84,92]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. a \u2208 [65,72] and b \u2208 [\u221289,\u221281]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. a \u2208 [\u2212118,\u2212109] and b \u2208 [14,21]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. a \u2208 [\u2212118,\u2212109] and b \u2208 [\u221219,\u22127]",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1",
+        "question_text": "Simplify the expression below and choose the interval the simplification\nis contained within.\n10 - 52 + 12 \u00f7 6 * 3 \u00f7 7",
+        "choices": [
+            {
+                "choice_text": "A. [\u221214.21,\u221214.03]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. [34.97,35.32]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. [\u221215.23,\u221214.82]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. [35.6,36.47]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. None of the above\n",
+                "is_correct": false
+            }
+        ]
+    }
+]
