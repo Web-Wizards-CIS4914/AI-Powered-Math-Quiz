@@ -778,5 +778,760 @@
                 "is_correct": false
             }
         ]
-    }
+    },
+    {
+        "module": "Progressive Quiz 2 Module1A",
+        "question_text": "Choose the smallest set of Real numbers that the number below belongs to.\n-√(250000 / 625)",
+        "choices": [
+            {
+                "choice_text": "A. Rational\nThese are numbers that can be written as fractions of Integers (e.g., -2/3).",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. Not a Real number\nThese are Nonreal Complex numbers OR things that are not numbers (e.g., dividing by 0).",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. Whole\nThese are the counting numbers with 0 (0, 1, 2, 3, ...).",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. Irrational\nThese cannot be written as a fraction of Integers.",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. Integer",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "module": "Progressive Quiz 2 Module1A",
+        "question_text": "Simplify the expression below and choose the interval the simplification is contained within.\n14 − 5 ÷ 15 * 20 − (19 * 9)",
+        "choices": [
+            {
+                "choice_text": "A. [-159.02, -153.02]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. [-167.67, -159.67]",
+                "is_correct": true
+            },
+            {
+                "choice_text": "C. [-105, -104]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. [184.98, 185.98]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. None of the above",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Progressive Quiz 2 Module1A",
+        "question_text": "Choose the smallest set of Real numbers that the number below belongs to.\n√(32400 / 81)",
+        "choices": [
+            {
+                "choice_text": "A. Whole",
+                "is_correct": true
+            },
+            {
+                "choice_text": "B. Rational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. Not a Real number",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. Integer",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. Irrational",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Progressive Quiz 2 Module1A",
+        "question_text": "Simplify the expression below into the form a + bi. Then, choose the intervals that a and b belong to.\n-63 + 11i / (3 - 5i)",
+        "choices": [
+            {
+                "choice_text": "A. a ∈ [-22, -20.5] and b ∈ [-2.5, -0.5]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. a ∈ [-5, -3] and b ∈ [9.5, 11]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. a ∈ [-7.5, -7] and b ∈ [-282.5, -281]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. a ∈ [-7.5, -7] and b ∈ [-10, -7]",
+                "is_correct": true
+            },
+            {
+                "choice_text": "E. a ∈ [-245.5, -243] and b ∈ [-10, -7]",
+                "is_correct": false
+            }
+        ]
+    }, 
+    {
+        "module": "Progressive Quiz 2 Module1A",
+        "question_text": "Simplify the expression below into the form a + bi. Then, choose the intervals that a and b belong to.\n(27 + 44i) / (6 - 2i)",
+        "choices": [
+            {
+                "choice_text": "A. a ∈ [73, 74.5] and b ∈ [7, 8.5]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. a ∈ [5.5, 7] and b ∈ [3.5, 6.5]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. a ∈ [0.5, 2.5] and b ∈ [317.5, 319.5]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. a ∈ [3, 5] and b ∈ [-22.5, -20.5]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. a ∈ [0.5, 2.5] and b ∈ [7, 8.5]",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "module": "Progressive Quiz 2 Module1A",
+        "question_text": "Simplify the expression below and choose the interval the simplification is contained within.\n8 - 1^2 + 12 ÷ 15 * 18 ÷ 14",
+        "choices": [
+            {
+                "choice_text": "A. [7.42, 8.89]",
+                "is_correct": true
+            },
+            {
+                "choice_text": "B. [8.79, 9.57]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. [6.4, 7.59]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. [9.85, 10.53]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. None of the above",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Progressive Quiz 2 Module1A",
+        "question_text": "Choose the smallest set of Complex numbers that the number below belongs to.\n√221 / 10 + √-5i",
+        "choices": [
+            {
+                "choice_text": "A. Rational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. Nonreal Complex",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. Pure Imaginary",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. Irrational",
+                "is_correct": true
+            },
+            {
+                "choice_text": "E. Not a Complex Number",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Progressive Quiz 2 Module1A",
+        "question_text": "Simplify the expression below into the form a + bi. Then, choose the intervals that a and b belong to.\n(5 - 9i)(-7 + 10i)",
+        "choices": [
+            {
+                "choice_text": "A. a ∈ [54, 61] and b ∈ [-119, -111]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. a ∈ [-128, -122] and b ∈ [11, 19]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. a ∈ [-128, -122] and b ∈ [-13, -7]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. a ∈ [54, 61] and b ∈ [106, 114]",
+                "is_correct": true
+            },
+            {
+                "choice_text": "E. a ∈ [-38, -33] and b ∈ [-93, -85]",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Progressive Quiz 2 Module1A",
+        "question_text": "Choose the smallest set of Complex numbers that the number below belongs to.\n(√-720 / 0)i + √208i",
+        "choices": [
+            {
+                "choice_text": "A. Rational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. Nonreal Complex",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. Irrational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. Not a Complex Number",
+                "is_correct": true
+            },
+            {
+                "choice_text": "E. Pure Imaginary",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Progressive Quiz 2 Module1A",
+        "question_text": "Simplify the expression below into the form a + bi. Then, choose the intervals that a and b belong to.\n(-2 - 9i)(-4 + 8i)",
+        "choices": [
+            {
+                "choice_text": "A. a ∈ [76, 85] and b ∈ [10, 22]",
+                "is_correct": true
+            },
+            {
+                "choice_text": "B. a ∈ [-64, -61] and b ∈ [48, 56]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. a ∈ [76, 85] and b ∈ [-23, -13]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. a ∈ [3, 14] and b ∈ [-76, -70]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. a ∈ [-64, -61] and b ∈ [-52, -47]",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Progressive Quiz 2 Module1B",
+        "question_text": "Choose the smallest set of Real numbers that the number below belongs to.\n-√6/0",
+        "choices": [
+            {
+                "choice_text": "A. Irrational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. Rational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. Not a Real number",
+                "is_correct": true
+            },
+            {
+                "choice_text": "D. Integer",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. Whole",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Progressive Quiz 2 Module1B",
+        "question_text": "Simplify the expression below and choose the interval the simplification is contained within.\n12 − 13^2 + 10 ÷ 3 * 11 ÷ 2",
+        "choices": [
+            {
+                "choice_text": "A. [198.33, 200.33]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. [−158.85,−154.85]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. [181.15, 188.15]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. [−143.67,−135.67]",
+                "is_correct": true
+            },
+            {
+                "choice_text": "E. None of the above",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Progressive Quiz 2 Module1B",
+        "question_text": "Choose the smallest set of Real numbers that the number below belongs to.\n√1190 / 14",
+        "choices": [
+            {
+                "choice_text": "A. Irrational",
+                "is_correct": true
+            },
+            {
+                "choice_text": "B. Integer",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. Whole",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. Not a Real number",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. Rational",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Progressive Quiz 2 Module1B",
+        "question_text": "Simplify the expression below into the form a + bi. Then, choose the intervals that a and b belong to.\n(63 − 55i) / (3 − 4i)",
+        "choices": [
+            {
+                "choice_text": "A. a ∈ [15.5, 18.5] and b ∈ [86.5, 88.5]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. a ∈ [20, 22.5] and b ∈ [13, 14.5]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. a ∈ [−2,−1] and b ∈ [−17.5,−16]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. a ∈ [15.5, 18.5] and b ∈ [2.5, 5]",
+                "is_correct": true
+            },
+            {
+                "choice_text": "E. a ∈ [408.5, 409.5] and b ∈ [2.5, 5]",
+                "is_correct": false
+            }
+        ]
+    },         
+    {
+        "module": "Progressive Quiz 2 Module1B",
+        "question_text": "Simplify the expression below into the form a + bi. Then, choose the intervals that a and b belong to.\n54 + 77i / 4 − 3i",
+        "choices": [
+            {
+                "choice_text": "A. a ∈ [17, 19.5] and b ∈ [5, 6.5]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. a ∈ [−1.5, 0.5] and b ∈ [469.5, 471.5]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. a ∈ [−16,−14.5] and b ∈ [18, 20]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. a ∈ [−1.5, 0.5] and b ∈ [18, 20]",
+                "is_correct": true
+            },
+            {
+                "choice_text": "E. a ∈ [13, 16] and b ∈ [−26.5,−25.5]",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Progressive Quiz 2 Module1B",
+        "question_text": "Choose the smallest set of Complex numbers that the number below belongs to.\n√(169/441) + √165i",
+        "choices": [
+            {
+                "choice_text": "A. Pure Imaginary",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. Not a Complex Number",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. Irrational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. Nonreal Complex",
+                "is_correct": true
+            },
+            {
+                "choice_text": "E. Rational",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Progressive Quiz 2 Module1B",
+        "question_text": "Simplify the expression below into the form a + bi. Then, choose the intervals that a and b belong to.\n(-6 - 5i)(4 - 2i)",
+        "choices": [
+            {
+                "choice_text": "A. a ∈ [-18, -11] and b ∈ [30.5, 33.9]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. a ∈ [-29, -18] and b ∈ [9.4, 10.2]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. a ∈ [-39, -31] and b ∈ [-11.4, -6.3]",
+                "is_correct": true
+            },
+            {
+                "choice_text": "D. a ∈ [-39, -31] and b ∈ [7.6, 8.1]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. a ∈ [-18, -11] and b ∈ [-32.4, -31.5]",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Progressive Quiz 2 Module1B",
+        "question_text": "Choose the smallest set of Complex numbers that the number below belongs to.\n−√(256/529) + 49i^2",
+        "choices": [
+            {
+                "choice_text": "A. Irrational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. Pure Imaginary",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. Not a Complex Number",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. Rational",
+                "is_correct": true
+            },
+            {
+                "choice_text": "E. Nonreal Complex",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Progressive Quiz 2 Module1B",
+        "question_text": "Simplify the expression below into the form a + bi. Then, choose the intervals that a and b belong to.\n(10 + 4i)(-7 + 6i)",
+        "choices": [
+            {
+                "choice_text": "A. a ∈ [-74, -69] and b ∈ [22, 29]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. a ∈ [-54, -43] and b ∈ [-90, -81]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. a ∈ [-97, -92] and b ∈ [29, 34]",
+                "is_correct": true
+            },
+            {
+                "choice_text": "D. a ∈ [-54, -43] and b ∈ [85, 90]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. a ∈ [-97, -92] and b ∈ [-37, -30]",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Progressive Quiz 2 Module1C",
+        "question_text": "Choose the smallest set of Real numbers that the number below belongs to.\n−√(63504/196)",
+        "choices": [
+            {
+                "choice_text": "A. Irrational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. Not a Real number",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. Whole",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. Integer",
+                "is_correct": true
+            },
+            {
+                "choice_text": "E. Rational",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Progressive Quiz 2 Module1C",
+        "question_text": "Simplify the expression below and choose the interval the simplification is contained within.\n11 − 4 ÷ 5 * 6 − (16 * 20)",
+        "choices": [
+            {
+                "choice_text": "A. [327.87, 331.87]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. [−312.13,−302.13]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. [−196,−194]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. [−317.8,−312.8]",
+                "is_correct": true
+            },
+            {
+                "choice_text": "E. None of the above",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Progressive Quiz 2 Module1C",
+        "question_text": "Choose the smallest set of Real numbers that the number below belongs to.\n−√(1547/7)",
+        "choices": [
+            {
+                "choice_text": "A. Irrational",
+                "is_correct": true
+            },
+            {
+                "choice_text": "B. Not a Real number",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. Integer",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. Whole",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. Rational",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Progressive Quiz 2 Module1C",
+        "question_text": "Simplify the expression below into the form a + bi. Then, choose the intervals that a and b belong to.\n(−18 + 11i) / (4 + 5i)",
+        "choices": [
+            {
+                "choice_text": "A. a ∈ [−17.5,−14.5] and b ∈ [2.5, 4]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. a ∈ [−1.5, 0] and b ∈ [2.5, 4]",
+                "is_correct": true
+            },
+            {
+                "choice_text": "C. a ∈ [−1.5, 0] and b ∈ [133.5, 134.5]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. a ∈ [−5.5,−4] and b ∈ [1.5, 3]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. a ∈ [−3.5,−2.5] and b ∈ [−2,−0.5]",
+                "is_correct": false
+            }
+        ]
+    },    
+    {
+        "module": "Progressive Quiz 2 Module1C",
+        "question_text": "Simplify the expression below into the form a + bi. Then, choose the intervals that a and b belong to.\n(9 − 66i) / (2 + 3i)",
+        "choices": [
+            {
+                "choice_text": "A. a ∈ [−181,−179.5] and b ∈ [−13,−12]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. a ∈ [16, 17.5] and b ∈ [−8.5,−7.5]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. a ∈ [3.5, 5.5] and b ∈ [−22.5,−21]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. a ∈ [−15,−13.5] and b ∈ [−13,−12]",
+                "is_correct": true
+            },
+            {
+                "choice_text": "E. a ∈ [−15,−13.5] and b ∈ [−159.5,−158.5]",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Progressive Quiz 2 Module1C",
+        "question_text": "Simplify the expression below and choose the interval the simplification is contained within.\n4 − 20 ÷ 5 * 2 − (12 * 14)",
+        "choices": [
+            {
+                "choice_text": "A. [−226.2,−222.1]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. [−167,−165.4]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. [−173.7,−171.1]",
+                "is_correct": true
+            },
+            {
+                "choice_text": "D. [169.6, 170.5]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. None of the above",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Module1C",
+        "question_text": "Choose the smallest set of Complex numbers that the number below belongs to.\n18 / −14 + √−64i",
+        "choices": [
+            {
+                "choice_text": "A. Rational",
+                "is_correct": true
+            },
+            {
+                "choice_text": "B. Not a Complex Number",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. Irrational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. Nonreal Complex",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. Pure Imaginary",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Progressive Quiz 2 Module1C",
+        "question_text": "Simplify the expression below into the form a + bi. Then, choose the intervals that a and b belong to.\n(6 + 5i)(−7 + 4i)",
+        "choices": [
+            {
+                "choice_text": "A. a ∈ [−25,−19] and b ∈ [−66,−56]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "B. a ∈ [−25,−19] and b ∈ [58, 62]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. a ∈ [−42,−41] and b ∈ [16, 25]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. a ∈ [−63,−56] and b ∈ [10, 16]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. a ∈ [−63,−56] and b ∈ [−15,−7]",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "module": "Progressive Quiz 2 Module1C",
+        "question_text": "Choose the smallest set of Complex numbers that the number below belongs to.\n(√−2145 / 0) i + √182i",
+        "choices": [
+            {
+                "choice_text": "A. Not a Complex Number",
+                "is_correct": true
+            },
+            {
+                "choice_text": "B. Nonreal Complex",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. Pure Imaginary",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. Rational",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. Irrational",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "module": "Progressive Quiz 2 Module1C",
+        "question_text": "Simplify the expression below into the form a + bi. Then, choose the intervals that a and b belong to.\n(7 − 9i)(3 − 5i)",
+        "choices": [
+            {
+                "choice_text": "A. a ∈ [−27,−17] and b ∈ [−65,−61]",
+                "is_correct": true
+            },
+            {
+                "choice_text": "B. a ∈ [62, 67] and b ∈ [8, 9]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "C. a ∈ [62, 67] and b ∈ [−13,−7]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "D. a ∈ [21, 22] and b ∈ [40, 52]",
+                "is_correct": false
+            },
+            {
+                "choice_text": "E. a ∈ [−27,−17] and b ∈ [59, 64]",
+                "is_correct": false
+            }
+        ]
+    }                         
+    
 ]
