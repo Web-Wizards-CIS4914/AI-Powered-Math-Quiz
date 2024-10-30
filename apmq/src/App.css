@@ -132,14 +132,15 @@ html, body {
 }
 
 
-/* Question box styling */
 .question-box {
   width: 45%;
-  background-color: #fafafa; /* Light grayish background */
+  background-color: #fafafa;
   border: 1px solid #ddd;
   padding: 20px;
-  border-radius: 10px; /* Rounded corners */
+  border-radius: 10px;
   box-sizing: border-box;
+  word-wrap: break-word; /* Enable word wrapping */
+  overflow-wrap: break-word; /* Break long lines */
 }
 
 .question-box h2 {
@@ -150,8 +151,14 @@ html, body {
 .question-box p {
   font-size: 18px;
   color: #333;
+  margin: 0 0 10px;
+  line-height: 1.5; /* Improve readability */
 }
-
+/* MathJax-rendered content */
+.MathJax .mjx-chtml {
+  word-spacing: normal; /* Prevent spacing issues */
+  line-height: 1.5; /* Keep inline math readable */
+}
 .question-box form {
   margin-top: 20px;
 }
@@ -210,46 +217,50 @@ html, body {
 
 
 /* Bot message bubble styling */
-.bot-message {
-  /* background-color: #ff5c33; /* Orange for bot message */
-  background-color: #fee5cb;
-  padding: 10px;
-  border-radius: 15px 15px 15px 0px; /* Custom rounded corners */
-  /* margin-bottom: 10px; */
-  color: #000000;
-  /* max-width: 75%; /* Keep it within a smaller width */
+.chatbox .bot-message {
+  background-color: #fee5cb; /* Light orange for bot messages */
+  padding: 12px;
+  border-radius: 15px 15px 15px 0px;
+  color: #333;
+  max-width: 75%;
   word-wrap: break-word;
+  margin-bottom: 10px;
+  align-self: flex-start;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* User message bubble styling */
 .user-message {
-  /* background-color: #3399ff; /* Blue for user message */
-  background-color: #f5f5ff; /* Light purple for user question */
-  padding: 10px;
-  border-radius: 15px 15px 0px 15px; /* Custom rounded corners */
-  /*margin-bottom: 10px;*/
-  color: #000000;
-  /* max-width: 75%; /* Limit width for text bubbles */
-  align-self: flex-end; /* Align user messages to the right */
-  word-wrap: break-word;
+  background-color: #e9c4ff; /* Light purple for user messages */
+  padding: 12px;
+  border-radius: 15px 15px 0px 15px;
+  color: #333;
+  max-width: 75%;
+  word-wrap: break-word ;
+  margin-bottom: 10px ;
+  align-self: flex-end ;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
+
+
 
 /* Text area for typing new messages */
 textarea {
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ddd;
-  border-radius: 0px 0px 10px 10px; /* Match rounded corners of chatbox */
+  border-radius: 0px 0px 10px 10px; /* Rounded corners on the bottom */
   resize: none;
-  height: 100px; /* Set a fixed height for the text area */
+  height: 80px; /* Smaller height for a compact look */
   width: 100%;
   box-sizing: border-box;
   border-top: 1px solid #ddd;
-  background-color: #fff;
+  background-color: #ffffff; /* White background for contrast */
+  margin-top: 10px;
 }
 
 textarea::placeholder {
-  color: #aaa;
+  color: #aaa; /* Placeholder color */
 }
 
 /* Radio input and form labels */
@@ -275,19 +286,21 @@ input[type="text"] {
 
 /* Style for the submit button */
 button[type="submit"] {
-  background-color: #3399ff; /* Blue background */
-  color: white; /* White text */
+  background-color: #3399ff; /* Consistent blue button */
+  color: white;
   border: none;
   cursor: pointer;
   font-size: 16px;
   padding: 10px;
-  width: 100%; /* Full width to match the input field */
-  box-sizing: border-box; /* Ensure padding doesn't affect width */
+  width: 100%; /* Full width to match input field */
+  box-sizing: border-box;
   border-radius: 5px; /* Rounded corners */
+  margin-top: 10px; /* Space above button */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
 }
 
-button[type="submit"] {
-  background-color: #3399ff; /* Blue button to match screenshot */
+button[type="submit"]:hover {
+  background-color: #267acc; /* Darker blue on hover */
 }
 
 .sidebar ul li a {

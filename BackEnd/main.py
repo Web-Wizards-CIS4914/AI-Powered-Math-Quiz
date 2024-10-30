@@ -1,9 +1,12 @@
-from fastapi import FastAPI, Request, HTTPException
+from fastapi import FastAPI, Request, HTTPException, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from huggingface_hub import InferenceClient
 from pydantic import BaseModel, EmailStr
+from sqlalchemy.orm import Session
+from typing import List
 import secrets
-
+from BackEnd.database import get_db  # Import get_db from your database setup
+from BackEnd.models import Question, Choice  # Import your models (assuming they are defined in models.py)
 
 app = FastAPI()
 
@@ -33,9 +36,16 @@ class VerificationRequest(BaseModel):
     email: EmailStr
     code: str
 
-@app.get("/")
-def read_root():
-    return {"message": "Welcome to the API! Available endpoints are /chat, /api/signup, and /api/verify"}
+class ChoiceResponse(BaseModel):
+    id: int
+    choice_text: str
+    is_correct: bool
+
+class QuestionResponse(BaseModel):
+    id: int
+    module: str
+    question_text: str
+    choices: List[ChoiceResponse]
 
 # Chat endpoint
 @app.post("/chat")
@@ -95,3 +105,27 @@ async def verify(request: VerificationRequest):
         return {"message": "Email verified successfully."}
     else:
         raise HTTPException(status_code=400, detail="Invalid verification code")
+
+@app.get("/")
+def read_root():
+    return {"message": "Welcome to the API! Available endpoints are /chat, /api/signup, /api/verify, and /api/questions"}
+
+# Questions endpoint
+@app.get("/api/questions", response_model=List[QuestionResponse])
+def get_questions(db: Session = Depends(get_db)):
+    questions = db.query(Question).all()
+    response = []
+    for question in questions:
+        choices = [
+            ChoiceResponse(id=choice.id, choice_text=choice.choice_text, is_correct=choice.is_correct)
+            for choice in question.choices
+        ]
+        response.append(
+            QuestionResponse(
+                id=question.id,
+                module=question.module,
+                question_text=question.question_text,
+                choices=choices
+            )
+        )
+    return response

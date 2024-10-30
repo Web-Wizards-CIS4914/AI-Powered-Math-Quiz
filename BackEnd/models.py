@@ -1,7 +1,7 @@
 # models.py
 from sqlalchemy import Column, Integer, String, Boolean, ForeignKey
 from sqlalchemy.orm import relationship
-from database import Base  # Import Base from database.py
+from BackEnd.database import Base  # Import Base from database.py
 
 # Quiz model (if applicable for a separate table)
 class Quiz(Base):
