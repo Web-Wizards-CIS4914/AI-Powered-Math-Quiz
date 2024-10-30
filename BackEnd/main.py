@@ -17,7 +17,7 @@ app.add_middleware(
 )
 
 # Initialize the Hugging Face Inference API client
-api_key = "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"  # Replace with your actual API key
+api_key = "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"
 client = InferenceClient(api_key=api_key)
 
 # Dummy database to store user information
