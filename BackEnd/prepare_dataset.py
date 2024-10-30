@@ -1,13 +1,23 @@
-import json
+from datasets import Dataset
+import os
 
-def prepare_data_for_gpt2(json_file, output_file):
-    with open(json_file, "r") as file:
-        quizzes = json.load(file)
+def load_and_prepare_dataset(file_path):
+    file_path = os.path.join(os.path.dirname(__file__), file_path)
+    with open(file_path, 'r') as f:
+        lines = f.readlines()
 
-    with open(output_file, "w") as out_file:
-        for quiz in quizzes:
-            prompt = quiz['prompt'].strip()
-            completion = quiz['completion'].strip()
-            out_file.write(f"{prompt}\n{completion}\n\n")
+    # Combine lines as prompt-completion pairs
+    data = []
+    for i in range(0, len(lines), 2):  # Assuming prompts and completions are in pairs
+        prompt = lines[i].strip()
+        completion = lines[i + 1].strip()
+        data.append({"text": f"<|startoftext|>{prompt} {completion}<|endoftext|>"})
+    
+    # Convert to Hugging Face dataset format
+    dataset = Dataset.from_dict({"text": [entry["text"] for entry in data]})
+    return dataset
 
-prepare_data_for_gpt2("MAC1105Quizzies.json", "gpt2_train.txt")
+# Load the dataset
+dataset = load_and_prepare_dataset("gpt2_train.txt")
+dataset.save_to_disk("gpt2_algebra_dataset")
+print("Dataset prepared and saved to disk.")

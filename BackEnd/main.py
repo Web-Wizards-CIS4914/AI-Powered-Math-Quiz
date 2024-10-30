@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Request, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from transformers import GPT2LMHeadModel, GPT2Tokenizer
+from huggingface_hub import InferenceClient
 from pydantic import BaseModel, EmailStr
 import secrets
 
@@ -16,9 +16,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Load the GPT-2 model and tokenizer from Hugging Face
-model = GPT2LMHeadModel.from_pretrained("gpt2")
-tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
+# Initialize the Hugging Face Inference API client
+api_key = "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"  # Replace with your actual API key
+client = InferenceClient(api_key=api_key)
 
 # Dummy database to store user information
 users_db = {}
@@ -42,16 +42,31 @@ def read_root():
 async def chat_with_gpt(request: Request):
     data = await request.json()
     user_message = data.get("message", "")
-    
     if not user_message:
         return {"response": "Please ask a question!"}
 
-    # Generate response from GPT-2
-    inputs = tokenizer.encode(user_message, return_tensors="pt")
-    outputs = model.generate(inputs, max_length=100)
-    response = tokenizer.decode(outputs[0], skip_special_tokens=True)
+    # Prepare the message format for the Inference API
+    messages = [{"role": "user", "content": user_message}]
 
-    return {"response": response}
+    # Stream the response from the Inference API
+    try:
+        response_text = ""
+        stream = client.chat.completions.create(
+            model="microsoft/Phi-3.5-mini-instruct",
+            messages=messages,
+            max_tokens=500,
+            stream=True
+        )
+        
+        # Collect and concatenate the streamed response
+        for chunk in stream:
+            response_text += chunk.choices[0].delta.content
+
+        return {"response": response_text}
+
+    except Exception as e:
+        print("Error during inference:", e)
+        return {"response": "An error occurred while processing your request."}
 
 # Signup endpoint
 @app.post("/api/signup")

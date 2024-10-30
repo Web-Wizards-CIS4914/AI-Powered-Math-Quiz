@@ -1,3 +1,4 @@
+# database.py
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
@@ -8,6 +9,8 @@ SQLALCHEMY_DATABASE_URL = "postgresql://webwizard:Cis_4914@my-fastapi-db.cf40kk4
 # Create the engine and session
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+
+# Base class for ORM models
 Base = declarative_base()
 
 # Dependency to get a DB session
