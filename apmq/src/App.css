@@ -1,23 +1,54 @@
+/* color:
+light purple: background-color: #f5f5ff;
+light orange: background-color: #fee5cb; 
+Light gray sidebar: background-color: #f2f2f2; 
+*/
+
 /* General body styles */
-body {
+html, body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* Prevents scrolling to make sure the layout stays within the viewport */
   background-color: #f5f5ff; /* Light purple background */
+}
+
+/* Navbar styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; 
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  /*box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);*/
+  z-index: 1000; /* Ensures the navbar is on top */
 }
 
 /* Container to hold sidebar and main content */
 .container {
   display: flex;
   height: 100vh;
+  width: 100vw; /* Full viewport width */
+  padding-top: 60px;
+  box-sizing: border-box;
 }
 
-/* Sidebar styling */
+/* left sidebar styling */
 .sidebar {
-  width: 30%;
-  background-color: #f2f2f2; /* Light gray sidebar */
+  width: 40%;
+  background-color: #fee5cb;
+  /*background-color: #fee5cb; /* light orange */
+  /*background-color: #f2f2f2; /* Light gray sidebar */
   padding: 20px;
-  border-right: 1px solid #ddd;
+  /*border-right: 1px solid #ddd;*/
+  box-sizing: border-box;
+  overflow-y: auto;
 }
 
 .sidebar ul {
@@ -29,11 +60,62 @@ body {
   margin: 15px 0;
 }
 
-.sidebar ul li a {
+/*
+.sidebar ul li a:hover {
   text-decoration: none;
   color: #333;
   font-size: 18px;
   font-weight: bold;
+}
+*/
+
+/* Glow Effect with box-shadow
+.sidebar ul li a:hover {
+  color: #333;
+  font-weight: bold;
+  box-shadow: 0 0 8px rgba(50, 50, 50, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+*/
+
+/* Background Color Change with Padding
+  .sidebar ul li a {
+  color: #333;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color: #e0e0e0; //Light background 
+  border-radius: 5px; // Optional rounded corners 
+}
+*/
+
+.sidebar ul li a {
+  position: relative;
+  color: #333;
+  text-decoration: none;
+  font-size: 18px; /* Set the base font size */
+  transition: font-weight 0.3s ease; /* Smooth transition for bold effect */
+}
+
+.sidebar ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #333;
+  transition: width 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  font-weight: bold; /* Make text bolder on hover */
+}
+
+.sidebar ul li a:hover::after {
+  width: 100%; /* Expand underline to full width */
 }
 
 /* Main content styling */
@@ -42,18 +124,22 @@ body {
   padding: 20px;
   display: flex;
   justify-content: flex-start;
-  gap: 20px;
-  background-color: #fff; /* White background for main content */
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  gap: 20px; /* 缝隙 */
+  background-color: #f5f5ff; /* White background for main content */
+  /*box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);*/
+  box-sizing: border-box;
+  overflow-y: auto;
 }
+
 
 /* Question box styling */
 .question-box {
-  width: 35%;
+  width: 45%;
   background-color: #fafafa; /* Light grayish background */
   border: 1px solid #ddd;
   padding: 20px;
   border-radius: 10px; /* Rounded corners */
+  box-sizing: border-box;
 }
 
 .question-box h2 {
@@ -96,7 +182,7 @@ body {
 
 /* Chatbot container */
 .chatbot {
-  width: 30%;
+  width: 50%;
   background-color: #fff;
   border: 1px solid #ddd;
   padding: 0; /* No padding for clean layout */
@@ -104,39 +190,46 @@ body {
   flex-direction: column;
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  justify-content: space-between; /* Align chatbox and text area */
+  /*justify-content: space-between; /* Align chatbox and text area */
+  max-height: calc(100vh - 40px); /* Set max height based on available viewport, minus some padding */
+  overflow: hidden; /* Prevents overflow */
+  flex-grow: 1;
 }
+
 
 /* Chat messages area */
 .chatbox {
   flex-grow: 1;
   border-bottom: 1px solid #ddd;
   padding: 20px; /* Padding inside chat area */
-  margin-bottom: 10px;
+  /* margin-bottom: 10px;*/
   overflow-y: auto;
-  max-height: 300px; /* Set a maximum height to mimic the screenshot */
-  background-color: #f5f5ff; /* Light purple background like in screenshot */
+  /*max-height: calc(100vh - 100px); /* Set a maximum height to mimic the screenshot */
+  background-color: #ffffff; /* white background */
 }
+
 
 /* Bot message bubble styling */
 .bot-message {
-  background-color: #ff5c33; /* Orange for bot message */
+  /* background-color: #ff5c33; /* Orange for bot message */
+  background-color: #fee5cb;
   padding: 10px;
   border-radius: 15px 15px 15px 0px; /* Custom rounded corners */
-  margin-bottom: 10px;
-  color: #fff;
-  max-width: 75%; /* Keep it within a smaller width */
+  /* margin-bottom: 10px; */
+  color: #000000;
+  /* max-width: 75%; /* Keep it within a smaller width */
   word-wrap: break-word;
 }
 
 /* User message bubble styling */
 .user-message {
-  background-color: #3399ff; /* Blue for user message */
+  /* background-color: #3399ff; /* Blue for user message */
+  background-color: #f5f5ff; /* Light purple for user question */
   padding: 10px;
   border-radius: 15px 15px 0px 15px; /* Custom rounded corners */
-  margin-bottom: 10px;
-  color: #fff;
-  max-width: 75%; /* Limit width for text bubbles */
+  /*margin-bottom: 10px;*/
+  color: #000000;
+  /* max-width: 75%; /* Limit width for text bubbles */
   align-self: flex-end; /* Align user messages to the right */
   word-wrap: break-word;
 }
