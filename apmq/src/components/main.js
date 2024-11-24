@@ -2,7 +2,16 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Navbar from './Navbar';
 import '../App.css';
-import { MathComponent } from 'mathjax-react';
+import { MathJax, MathJaxContext } from "better-react-mathjax";
+
+
+const mathJaxConfig = {
+  loader: { load: ["input/asciimath"] },
+  asciimath: {
+    displaystyle: true,
+    delimiters: [["$", "$"], ["`", "`"]]
+  }
+};
 
 function Main() {
   const [questions, setQuestions] = useState([]);
@@ -17,7 +26,7 @@ function Main() {
       try {
         const response = await axios.get('http://127.0.0.1:8000/api/questions');
         setQuestions(response.data);
-        console.log("Fetched questions:", response.data);  // Debug: Log fetched data
+        console.log("Fetched questions:", response.data);
       } catch (error) {
         console.error("Error fetching questions:", error);
       }
@@ -36,7 +45,7 @@ function Main() {
         setTimeout(() => {
           setFeedback("");
           setSelectedChoice(null);
-          setCurrentQuestionIndex((prevIndex) => prevIndex + 1); // Move to the next question
+          setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
         }, 1000);
       } else {
         setFeedback("Incorrect. Try again!");
@@ -65,21 +74,19 @@ function Main() {
       ]);
     }
 
-    setUserMessage(''); // Clear the input field
+    setUserMessage('');
   };
 
   const currentQuestion = questions[currentQuestionIndex];
 
-  // Function to remove dollar signs and convert double backslashes to single backslashes
-  const formatLatex = (text) => {
-    if (text) {
-      return text.replace(/\$/g, '').replace(/\\\\/g, '\\'); // Remove $ symbols and fix backslashes
-    }
-    return text;
+  // Wraps text with backticks for AsciiMath rendering
+  const wrapWithBackticks = (text) => {
+    if (!text) return "";
+    return `\`${text}\``;
   };
 
   return (
-    <>
+    <MathJaxContext config={mathJaxConfig}>
       <Navbar />
       <div className="container">
         <div className="sidebar">
@@ -97,10 +104,15 @@ function Main() {
           <div className="question-box">
             {currentQuestion ? (
               <>
-                {/* Display raw question text without dollar signs */}
-                <p>{formatLatex(currentQuestion.question_text)}</p>
+                {/* Display question text */}
+                <p>{currentQuestion.question_text}</p>
 
-                {/* Choices */}
+                {/* Display question expression below the text */}
+                <MathJax>
+                  <p>{wrapWithBackticks(currentQuestion.question_expression)}</p>
+                </MathJax>
+
+                {/* Render choices */}
                 <form onSubmit={(e) => e.preventDefault()}>
                   {currentQuestion.choices.map((choice) => (
                     <label key={choice.id} style={{ display: 'block', marginBottom: '10px' }}>
@@ -110,8 +122,7 @@ function Main() {
                         value={choice.id}
                         onChange={() => handleChoiceSelect(choice)}
                       />
-                      {/* Render each choice with MathComponent */}
-                      <MathComponent tex={String.raw`${formatLatex(choice.choice_text)}`} display={false} />
+                      <MathJax inline>{wrapWithBackticks(choice.choice_text)}</MathJax>
                     </label>
                   ))}
                   <button onClick={handleSubmitAnswer}>Submit</button>
@@ -143,7 +154,7 @@ function Main() {
           </div>
         </div>
       </div>
-    </>
+    </MathJaxContext>
   );
 }
 

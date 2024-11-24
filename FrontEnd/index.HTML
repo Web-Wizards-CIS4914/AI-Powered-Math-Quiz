@@ -65,7 +65,7 @@
             userMessage.innerText = userInput;
             chatbox.appendChild(userMessage);
 
-            // Send the message to the backend (FastAPI GPT-2)
+            // Send the message to the backend 
             const response = await fetch('http://127.0.0.1:8000/chat', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },

@@ -1,8 +1,8 @@
 # populate_database.py
 import json
 from sqlalchemy.orm import Session
-from .database import SessionLocal
-from .models import Question, Choice
+from database import SessionLocal
+from models import Question, Choice
 
 # Load JSON data from the specified file path
 json_file_path = r"C:\Users\Connor Devaney\Documents\Senior Project\questions.json"
@@ -17,8 +17,8 @@ def populate_database():
         for item in data:
             # Create a Question instance
             question = Question(
-                module=item["module"],
-                question_text=item["question_text"]
+                question_text=item["question_text"],
+                question_expression=item.get("question_expression", "")  # Include the new field
             )
             db.add(question)
             db.commit()  # Commit to get the question ID

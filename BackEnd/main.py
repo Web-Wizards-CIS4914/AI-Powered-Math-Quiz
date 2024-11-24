@@ -5,8 +5,8 @@ from pydantic import BaseModel, EmailStr
 from sqlalchemy.orm import Session
 from typing import List
 import secrets
-from BackEnd.database import get_db  # Import get_db from your database setup
-from BackEnd.models import Question, Choice  # Import your models (assuming they are defined in models.py)
+from database import get_db
+from models import Question, Choice
 
 app = FastAPI()
 
@@ -45,6 +45,7 @@ class QuestionResponse(BaseModel):
     id: int
     module: str
     question_text: str
+    question_expression: str  # Added question_expression field
     choices: List[ChoiceResponse]
 
 # Chat endpoint
@@ -113,7 +114,13 @@ def read_root():
 # Questions endpoint
 @app.get("/api/questions", response_model=List[QuestionResponse])
 def get_questions(db: Session = Depends(get_db)):
+    # Query all questions
     questions = db.query(Question).all()
+    
+    # Refresh each question to ensure it's up-to-date
+    for question in questions:
+        db.refresh(question)
+
     response = []
     for question in questions:
         choices = [
@@ -125,6 +132,7 @@ def get_questions(db: Session = Depends(get_db)):
                 id=question.id,
                 module=question.module,
                 question_text=question.question_text,
+                question_expression=question.question_expression,  # Ensure question_expression is included
                 choices=choices
             )
         )

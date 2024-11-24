@@ -1,7 +1,7 @@
 # models.py
 from sqlalchemy import Column, Integer, String, Boolean, ForeignKey
 from sqlalchemy.orm import relationship
-from BackEnd.database import Base  # Import Base from database.py
+from database import Base
 
 # Quiz model (if applicable for a separate table)
 class Quiz(Base):
@@ -18,8 +18,9 @@ class Question(Base):
     id = Column(Integer, primary_key=True, index=True)
     module = Column(String, nullable=False)  # Module label
     question_text = Column(String, nullable=False)
+    question_expression = Column(String, nullable=True)  # New field
     choices = relationship("Choice", back_populates="question")  # One-to-many with choices
-
+    
 # Choice model for answer options
 class Choice(Base):
     __tablename__ = "choices"
