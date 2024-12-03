@@ -1,56 +1,54 @@
 import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './Navbar'; // Ensure this path is correct based on your folder structure
+import Navbar from './Navbar'; // Ensure this path is correct
 
 function Register() {
-    const [emailAddress, setemailAddres] = useState("");
+    const [email, setEmail] = useState("");
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState(null);
     const [successMessage, setSuccessMessage] = useState("");
 
-    const handleLogin = async (e) => {
+    const handleRegister = async (e) => {
         e.preventDefault();
         setError(null); // Reset error message on new attempt
         setSuccessMessage(""); // Clear any previous success messages
         try {
-            const response = await fetch("/api/login", {
+            const response = await fetch("http://127.0.0.1:8000/api/signup", {  // Update with your backend URL
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                 },
-                body: JSON.stringify({ username, password }),
+                body: JSON.stringify({ email, username, password }),
             });
 
             if (response.ok) {
-                setSuccessMessage("Login successful! Redirecting...");
+                setSuccessMessage("Registration successful! Redirecting...");
                 setTimeout(() => {
-                    window.location.href = "/dashboard";
+                    window.location.href = "/login"; // Redirect to login page
                 }, 1500); // Redirect after a short delay
             } else {
                 const data = await response.json();
-                setError(data.error || "Invalid username or password.");
+                setError(data.detail || "An error occurred during registration.");
             }
         } catch (error) {
-            setError("An error occurred. Please try again.");
+            setError("Unable to connect to the server. Please try again later.");
         }
     };
 
     return (
         <div>
-            <Navbar /> {/* Render the Navbar component */}
-
-            {/* Main Content */}
+            <Navbar />
             <div style={styles.mainContent}>
                 <div style={styles.loginContainer}>
                     <h2 style={styles.header}>Create Account</h2>
-                    <form onSubmit={handleLogin} style={styles.form}>
+                    <form onSubmit={handleRegister} style={styles.form}>
                         <label style={styles.label}>Email Address</label>
                         <input
-                            type="text"
+                            type="email"
                             placeholder="Enter your email"
-                            value={emailAddress}
-                            onChange={(e) => setemailAddres(e.target.value)}
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                             required
                             style={styles.input}
                         />
@@ -72,22 +70,10 @@ function Register() {
                             required
                             style={styles.input}
                         />
-                        <button
-                            type="button"
-                            className="register-btn"
-                            style={styles.registerButton}
-                            onClick={() => window.location.href = '/register'}
-                        >Create Account</button>
-                        <br />
-                        <p style={{ textAlign: 'left' }}>Already have an account? </p>
-                        <button 
-                            type="button"
-                            style={styles.submitButton}
-                            onClick={() => window.location.href = '/login'}
-                            >Sign In</button>
-                        <br />
+                        <button type="submit" style={styles.registerButton}>
+                            Create Account
+                        </button>
                     </form>
-                    {/* Success and Error Messages */}
                     {successMessage && <p style={styles.success}>{successMessage}</p>}
                     {error && <p style={styles.error}>{error}</p>}
                 </div>
@@ -103,16 +89,18 @@ const styles = {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        height: 'calc(100vh - 56px)',
-        backgroundColor: '#fee5cb', // light orange color
+        height: '100vh',
+        backgroundColor: '#fee5cb',
+        paddingTop: '3rem',
     },
     loginContainer: {
         boxShadow: '0 0 15px rgba(0,0,0,0.2)',
         borderRadius: '8px',
-        width: '400px', 
+        width: '400px',
         backgroundColor: 'white',
-        padding: '2em',
+        padding: '2em 2em .5em 2em',
         textAlign: 'center',
+        marginTop: '60px',
     },
     header: {
         color: '#333',

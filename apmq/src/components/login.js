@@ -1,49 +1,56 @@
-import React, { useState } from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './Navbar'; // Ensure this path is correct based on your folder structure
+import React, { useState, useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import Navbar from "./Navbar";
+import { AuthContext } from "../contexts/AuthContext"; // Import AuthContext for login functionality
 
 function Login() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-    const [error, setError] = useState(null);
+    const [error, setError] = useState("");
     const [successMessage, setSuccessMessage] = useState("");
+    const navigate = useNavigate();
+    const { login } = useContext(AuthContext); // Access login function from AuthContext
 
     const handleLogin = async (e) => {
         e.preventDefault();
-        setError(null); // Reset error message on new attempt
-        setSuccessMessage(""); // Clear any previous success messages
+        setError("");
+        setSuccessMessage("");
+
+        const formData = new URLSearchParams();
+        formData.append("username", username);
+        formData.append("password", password);
+
         try {
-            const response = await fetch("/api/login", {
+            const response = await fetch("http://127.0.0.1:8000/api/login", {
                 method: "POST",
                 headers: {
-                    "Content-Type": "application/json",
+                    "Content-Type": "application/x-www-form-urlencoded",
                 },
-                body: JSON.stringify({ username, password }),
+                body: formData,
             });
 
             if (response.ok) {
+                const data = await response.json();
                 setSuccessMessage("Login successful! Redirecting...");
+                login(data.user_id, username); // Update AuthContext with user ID and username
                 setTimeout(() => {
-                    window.location.href = "/dashboard";
-                }, 1500); // Redirect after a short delay
+                    navigate("/main"); // Redirect to main page
+                }, 1500);
             } else {
                 const data = await response.json();
-                setError(data.error || "Invalid username or password.");
+                setError(data.detail || "Login failed. Please check your credentials.");
             }
         } catch (error) {
-            setError("An error occurred. Please try again.");
+            setError("Unable to connect to the server. Please try again later.");
         }
     };
 
     return (
         <div>
-            <Navbar /> {/* Render the Navbar component */}
-
-            {/* Main Content */}
+            <Navbar />
             <div style={styles.mainContent}>
                 <div style={styles.loginContainer}>
                     <h2 style={styles.header}>Welcome Back!</h2>
-                    <p style={{ textAlign: 'center' }}>Log in to access your account.</p>
                     <form onSubmit={handleLogin} style={styles.form}>
                         <label style={styles.label}>Username</label>
                         <input
@@ -64,17 +71,7 @@ function Login() {
                             style={styles.input}
                         />
                         <button type="submit" style={styles.submitButton}>Log In</button>
-                        <br />
-                        <button
-                            type="button"
-                            className="register-btn"
-                            style={styles.registerButton}
-                            onClick={() => window.location.href = '/register'}
-                        >
-                            Register
-                        </button>
                     </form>
-                    {/* Success and Error Messages */}
                     {successMessage && <p style={styles.success}>{successMessage}</p>}
                     {error && <p style={styles.error}>{error}</p>}
                 </div>
@@ -90,13 +87,13 @@ const styles = {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        height: 'calc(100vh - 56px)',
-        backgroundColor: '#fee5cb', // light orange color
+        height: '100vh',
+        backgroundColor: '#fee5cb', // Light orange background
     },
     loginContainer: {
         boxShadow: '0 0 15px rgba(0,0,0,0.2)',
         borderRadius: '8px',
-        width: '400px', 
+        width: '400px',
         backgroundColor: 'white',
         padding: '2em',
         textAlign: 'center',
@@ -133,16 +130,6 @@ const styles = {
         cursor: 'pointer',
         borderRadius: '4px',
         marginTop: '1em',
-    },
-    registerButton: {
-        backgroundColor: '#28a745',
-        color: 'white',
-        border: 'none',
-        padding: '10px',
-        fontSize: '1em',
-        cursor: 'pointer',
-        borderRadius: '4px',
-        marginTop: '10px',
     },
     success: {
         color: 'green',
